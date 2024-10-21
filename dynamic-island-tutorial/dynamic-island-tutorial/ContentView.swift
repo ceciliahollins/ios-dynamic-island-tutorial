@@ -12,6 +12,10 @@ struct ContentView: View {
     @Environment(ViewModel.self) private var model
     @State private var audioPlayer: AudioPlayer = AudioPlayer()
     
+    init() {
+        audioPlayer.songHasFinished = model.currSongFinishedPlaying
+    }
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {

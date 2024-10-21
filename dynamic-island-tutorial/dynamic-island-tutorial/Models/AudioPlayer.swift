@@ -19,6 +19,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     var isPlaying: Bool {
         audioPlayer.isPlaying
     }
+    var songHasFinished: () -> () = { }
     
     func loadSong(_ fileName: String) {
         let path = Bundle.main.path(forResource: "\(fileName).mp3", ofType: nil)!
@@ -43,7 +44,6 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        audioPlayer.currentTime = 0
-        audioPlayer.play()
+        songHasFinished()
     }
 }
