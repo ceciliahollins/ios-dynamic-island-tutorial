@@ -167,5 +167,6 @@ struct MusicLockScreen: View {
             }
         }
         .padding()
+        .background(Color(red: 0.01, green: 0.29, blue: 0.41))
     }
 }

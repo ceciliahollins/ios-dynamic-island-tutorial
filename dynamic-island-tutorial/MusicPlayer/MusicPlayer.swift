@@ -46,22 +46,23 @@ struct MusicPlayerEntryView : View {
     var currSong = 0
 
     var body: some View {
-        ZStack {
-            Color.black
-            VStack {
-                Image(entry.playlist[currSong].albumCover)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Text(entry.playlist[currSong].songTitle)
-                    .font(.body)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-                Text(entry.playlist[currSong].artist)
-                    .font(.caption)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-            }
-            .padding()
+        VStack {
+            Image(entry.playlist[currSong].albumCover)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+            Text(entry.playlist[currSong].songTitle)
+                .font(.headline)
+                .foregroundColor(Color.white)
+                .multilineTextAlignment(.center)
+            Text(entry.playlist[currSong].artist)
+                .font(.body)
+                .foregroundStyle(.secondary)
+                .foregroundColor(Color.white)
+                .multilineTextAlignment(.center)
+        }
+        .containerBackground(for: .widget) {
+            Color(red: 0.01, green: 0.29, blue: 0.41)
         }
     }
 }

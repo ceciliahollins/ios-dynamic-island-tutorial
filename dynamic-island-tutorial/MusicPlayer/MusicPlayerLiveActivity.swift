@@ -74,6 +74,6 @@ struct MusicPlayerLiveActivity_Previews: PreviewProvider {
             .previewDisplayName("Minimal")
         attributes
             .previewContext(contentState, viewKind: .content)
-            .previewDisplayName("Notification")
+            .previewDisplayName("Lock Screen")
     }
 }
