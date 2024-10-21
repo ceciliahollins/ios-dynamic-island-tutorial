@@ -60,7 +60,7 @@ struct MusicPlayerLiveActivity: Widget {
 
 struct MusicPlayerLiveActivity_Previews: PreviewProvider {
     static let attributes = MusicPlayerAttributes(name: "Me")
-    static let contentState = MusicPlayerAttributes.ContentState(playlist: SeventiesPlaylist().songs)
+    static let contentState = MusicPlayerAttributes.ContentState(playlist: SeventiesPlaylist.songs)
 
     static var previews: some View {
         attributes

@@ -11,11 +11,11 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), playlist: SeventiesPlaylist().songs)
+        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), playlist: SeventiesPlaylist.songs)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration, playlist: SeventiesPlaylist().songs)
+        let entry = SimpleEntry(date: Date(), configuration: configuration, playlist: SeventiesPlaylist.songs)
         completion(entry)
     }
 
@@ -26,7 +26,7 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration, playlist: SeventiesPlaylist().songs)
+            let entry = SimpleEntry(date: entryDate, configuration: configuration, playlist: SeventiesPlaylist.songs)
             entries.append(entry)
         }
 
@@ -80,7 +80,7 @@ struct MusicPlayer: Widget {
 
 struct MusicPlayer_Previews: PreviewProvider {
     static var previews: some View {
-        MusicPlayerEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), playlist: SeventiesPlaylist().songs))
+        MusicPlayerEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), playlist: SeventiesPlaylist.songs))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
