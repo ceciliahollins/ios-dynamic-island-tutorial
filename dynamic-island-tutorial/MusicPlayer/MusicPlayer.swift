@@ -11,11 +11,11 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), playlist: SeventiesPlaylist.songs)
+        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), song: SeventiesPlaylist.songs[0])
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration, playlist: SeventiesPlaylist.songs)
+        let entry = SimpleEntry(date: Date(), configuration: configuration, song: SeventiesPlaylist.songs[0])
         completion(entry)
     }
 
@@ -26,7 +26,7 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration, playlist: SeventiesPlaylist.songs)
+            let entry = SimpleEntry(date: entryDate, configuration: configuration, song: SeventiesPlaylist.songs[hourOffset])
             entries.append(entry)
         }
 
@@ -38,24 +38,23 @@ struct Provider: IntentTimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationIntent
-    let playlist: [Song]
+    let song: Song
 }
 
 struct MusicPlayerEntryView : View {
     var entry: Provider.Entry
-    var currSong = 0
 
     var body: some View {
         VStack {
-            Image(entry.playlist[currSong].albumCover)
+            Image(entry.song.albumCover)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
-            Text(entry.playlist[currSong].songTitle)
+            Text(entry.song.songTitle)
                 .font(.headline)
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
-            Text(entry.playlist[currSong].artist)
+            Text(entry.song.artist)
                 .font(.body)
                 .foregroundStyle(.secondary)
                 .foregroundColor(Color.white)
@@ -79,9 +78,12 @@ struct MusicPlayer: Widget {
     }
 }
 
-struct MusicPlayer_Previews: PreviewProvider {
-    static var previews: some View {
-        MusicPlayerEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), playlist: SeventiesPlaylist.songs))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
-    }
+#Preview(as: WidgetFamily.systemLarge) {
+    MusicPlayer()
+} timeline: {
+    SimpleEntry(date: Date.now, configuration: ConfigurationIntent(), song: SeventiesPlaylist.songs[0])
+    SimpleEntry(date: Date.now, configuration: ConfigurationIntent(), song: SeventiesPlaylist.songs[1])
+    SimpleEntry(date: Date.now, configuration: ConfigurationIntent(), song: SeventiesPlaylist.songs[2])
+    SimpleEntry(date: Date.now, configuration: ConfigurationIntent(), song: SeventiesPlaylist.songs[3])
+    SimpleEntry(date: Date.now, configuration: ConfigurationIntent(), song: SeventiesPlaylist.songs[4])
 }
