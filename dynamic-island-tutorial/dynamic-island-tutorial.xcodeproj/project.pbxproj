@@ -26,6 +26,20 @@
 		2CF39EF929C6AB1C002D1267 /* SeventiesPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF39EF629C6AB0F002D1267 /* SeventiesPlaylist.swift */; };
 		2CF39EFA29C6AB2A002D1267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF39EC829C6A9C6002D1267 /* Assets.xcassets */; };
 		2CF39EFB29C6AC1C002D1267 /* MusicPlayerLiveActivityViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF39EF129C6AAB1002D1267 /* MusicPlayerLiveActivityViews.swift */; };
+		2CFD03FD2CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03F92CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 */; };
+		2CFD03FE2CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03F82CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 */; };
+		2CFD03FF2CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03F72CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 */; };
+		2CFD04002CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03FA2CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 */; };
+		2CFD04012CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03FB2CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 */; };
+		2CFD04022CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03F92CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 */; };
+		2CFD04032CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03F82CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 */; };
+		2CFD04042CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03F72CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 */; };
+		2CFD04052CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03FA2CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 */; };
+		2CFD04062CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD03FB2CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 */; };
+		2CFD04092CC6FD36003DDAC7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD04082CC6FD36003DDAC7 /* ViewModel.swift */; };
+		2CFD040A2CC6FD36003DDAC7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD04082CC6FD36003DDAC7 /* ViewModel.swift */; };
+		2CFD040C2CC703D3003DDAC7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD040B2CC703D3003DDAC7 /* AudioPlayer.swift */; };
+		2CFD040D2CC703D3003DDAC7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD040B2CC703D3003DDAC7 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +85,13 @@
 		2CF39EF129C6AAB1002D1267 /* MusicPlayerLiveActivityViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerLiveActivityViews.swift; sourceTree = "<group>"; };
 		2CF39EF429C6AAE9002D1267 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		2CF39EF629C6AB0F002D1267 /* SeventiesPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventiesPlaylist.swift; sourceTree = "<group>"; };
+		2CFD03F72CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BillyJoel_Vienna.mp3; sourceTree = "<group>"; };
+		2CFD03F82CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Eagles_OneOfTheseNights.mp3; sourceTree = "<group>"; };
+		2CFD03F92CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EltonJohn_BennieAndTheJets.mp3; sourceTree = "<group>"; };
+		2CFD03FA2CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FleetwoodMac_Dreams.mp3; sourceTree = "<group>"; };
+		2CFD03FB2CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Toploader_DancingInTheMoonlight.mp3; sourceTree = "<group>"; };
+		2CFD04082CC6FD36003DDAC7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2CFD040B2CC703D3003DDAC7 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +136,7 @@
 		2CF39EC329C6A9C5002D1267 /* dynamic-island-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2CFD04072CC6FD15003DDAC7 /* Models */,
 				2CF39EF329C6AADE002D1267 /* Resources */,
 				2CF39EC429C6A9C5002D1267 /* dynamic_island_tutorialApp.swift */,
 				2CF39EC629C6A9C5002D1267 /* ContentView.swift */,
@@ -158,11 +180,33 @@
 		2CF39EF329C6AADE002D1267 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2CFD03FC2CC6FB18003DDAC7 /* Audio */,
 				2CF39EC829C6A9C6002D1267 /* Assets.xcassets */,
-				2CF39EF429C6AAE9002D1267 /* Song.swift */,
 				2CF39EF629C6AB0F002D1267 /* SeventiesPlaylist.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CFD03FC2CC6FB18003DDAC7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				2CFD03F72CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 */,
+				2CFD03F82CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 */,
+				2CFD03F92CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 */,
+				2CFD03FA2CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 */,
+				2CFD03FB2CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		2CFD04072CC6FD15003DDAC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CFD040B2CC703D3003DDAC7 /* AudioPlayer.swift */,
+				2CFD04082CC6FD36003DDAC7 /* ViewModel.swift */,
+				2CF39EF429C6AAE9002D1267 /* Song.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +292,11 @@
 			files = (
 				2CF39ECD29C6A9C6002D1267 /* Preview Assets.xcassets in Resources */,
 				2CF39EC929C6A9C6002D1267 /* Assets.xcassets in Resources */,
+				2CFD03FD2CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 in Resources */,
+				2CFD03FE2CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 in Resources */,
+				2CFD03FF2CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 in Resources */,
+				2CFD04002CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 in Resources */,
+				2CFD04012CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +306,11 @@
 			files = (
 				2CF39EFA29C6AB2A002D1267 /* Assets.xcassets in Resources */,
 				2CF39EE629C6A9FF002D1267 /* Assets.xcassets in Resources */,
+				2CFD04022CC6FB18003DDAC7 /* EltonJohn_BennieAndTheJets.mp3 in Resources */,
+				2CFD04032CC6FB18003DDAC7 /* Eagles_OneOfTheseNights.mp3 in Resources */,
+				2CFD04042CC6FB18003DDAC7 /* BillyJoel_Vienna.mp3 in Resources */,
+				2CFD04052CC6FB18003DDAC7 /* FleetwoodMac_Dreams.mp3 in Resources */,
+				2CFD04062CC6FB18003DDAC7 /* Toploader_DancingInTheMoonlight.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +325,9 @@
 				2CF39EE929C6A9FF002D1267 /* MusicPlayer.intentdefinition in Sources */,
 				2CF39EC529C6A9C5002D1267 /* dynamic_island_tutorialApp.swift in Sources */,
 				2CF39EF729C6AB0F002D1267 /* SeventiesPlaylist.swift in Sources */,
+				2CFD040A2CC6FD36003DDAC7 /* ViewModel.swift in Sources */,
 				2CF39EF529C6AAE9002D1267 /* Song.swift in Sources */,
+				2CFD040D2CC703D3003DDAC7 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +337,12 @@
 			files = (
 				2CF39EE329C6A9FE002D1267 /* MusicPlayer.swift in Sources */,
 				2CF39EDF29C6A9FE002D1267 /* MusicPlayerBundle.swift in Sources */,
+				2CFD040C2CC703D3003DDAC7 /* AudioPlayer.swift in Sources */,
 				2CF39EFB29C6AC1C002D1267 /* MusicPlayerLiveActivityViews.swift in Sources */,
 				2CF39EE129C6A9FE002D1267 /* MusicPlayerLiveActivity.swift in Sources */,
 				2CF39EE829C6A9FF002D1267 /* MusicPlayer.intentdefinition in Sources */,
 				2CF39EF929C6AB1C002D1267 /* SeventiesPlaylist.swift in Sources */,
+				2CFD04092CC6FD36003DDAC7 /* ViewModel.swift in Sources */,
 				2CF39EF829C6AB19002D1267 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +481,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -433,7 +492,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -462,6 +521,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,7 +532,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -499,7 +559,7 @@
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MusicPlayer;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +588,7 @@
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MusicPlayer;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

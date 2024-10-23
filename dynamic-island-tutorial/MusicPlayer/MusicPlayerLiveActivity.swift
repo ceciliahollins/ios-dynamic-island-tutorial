@@ -12,7 +12,7 @@ import SwiftUI
 struct MusicPlayerAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
-        var playlist: [Song]
+        var song: Song
     }
 
     // Fixed non-changing properties about your activity go here!
@@ -26,7 +26,7 @@ struct MusicPlayerLiveActivity: Widget {
         ActivityConfiguration(for: MusicPlayerAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                MusicLockScreen(currSong: context.state.playlist[currSong])
+                MusicLockScreen(currSong: context.state.song)
             }
             .activityBackgroundTint(Color.black)
             .activitySystemActionForegroundColor(Color.black)
@@ -36,20 +36,20 @@ struct MusicPlayerLiveActivity: Widget {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    MusicLeading(currSong: context.state.playlist[currSong])
+                    MusicLeading(currSong: context.state.song)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
                     MusicTrailing()
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    MusicBottom(currSong: context.state.playlist[currSong])
+                    MusicBottom(currSong: context.state.song)
                 }
             } compactLeading: {
-                MusicCompactLeading(currSong: context.state.playlist[currSong])
+                MusicCompactLeading(currSong: context.state.song)
             } compactTrailing: {
                 MusicCompactTrailing()
             } minimal: {
-                MusicMinimal(currSong: context.state.playlist[currSong])
+                MusicMinimal(currSong: context.state.song)
             }
             .contentMargins(.leading, 25, for: .expanded)
             .contentMargins(.trailing, 25, for: .expanded)
@@ -59,8 +59,8 @@ struct MusicPlayerLiveActivity: Widget {
 }
 
 struct MusicPlayerLiveActivity_Previews: PreviewProvider {
-    static let attributes = MusicPlayerAttributes(name: "Me")
-    static let contentState = MusicPlayerAttributes.ContentState(playlist: SeventiesPlaylist().songs)
+    static let attributes = MusicPlayerAttributes(name: "MusicPlayer")
+    static let contentState = MusicPlayerAttributes.ContentState(song: SeventiesPlaylist.songs[0])
 
     static var previews: some View {
         attributes
@@ -74,6 +74,6 @@ struct MusicPlayerLiveActivity_Previews: PreviewProvider {
             .previewDisplayName("Minimal")
         attributes
             .previewContext(contentState, viewKind: .content)
-            .previewDisplayName("Notification")
+            .previewDisplayName("Lock Screen")
     }
 }
