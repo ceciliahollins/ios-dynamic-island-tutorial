@@ -50,15 +50,19 @@ struct MusicPlayerEntryView : View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+            
             Text(entry.song.songTitle)
                 .font(.headline)
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
+                .contentTransition(.symbolEffect)
+            
             Text(entry.song.artist)
                 .font(.body)
                 .foregroundStyle(.secondary)
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
+                .contentTransition(.symbolEffect)
         }
         .containerBackground(for: .widget) {
             Color(red: 0.01, green: 0.29, blue: 0.41)
