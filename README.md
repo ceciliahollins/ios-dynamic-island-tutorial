@@ -2,13 +2,15 @@
 A project to practice and demonstrate functionality of iOS Live Activities framework and SwiftUI
 
 ## Description
-This project is intended for learning and practicing frameworks for the iPhone Dynamic Island, including WidgetKit, ActivityKit, and SwiftUI. 
+This project is intended for learning and practicing ActivityKit, a framework that allows live updates in the Dynamic Island and Lock Screen. Live Activities allow for real time updates of your data in a quick and glanceable manner. Live Activities are similar to widgets, except that widgets create a timeline of updates while Live Activities are updated based on new data.
+
+It is important to have an understanding of WidgetKit and widgets design and development, as Live Activites are an extenstion to widgets. To learn about widgets, view the authors [iOS Widgets tutorial](https://github.com/ceciliahollins/ios-widgets-tutorial)
 
 ## Getting Started
 
 ### Requirements
 
-* iOS16.1+
+* iOS17+
 
 ### Executing program
 
@@ -28,6 +30,10 @@ hollins.cecilia@gmail.com
 
 * 0.1
     * Initial Release
+* 0.2
+    * Improving app functionality
+    * Improving basic UI
+    * Adding data updates 
 
 ## Acknowledgments
 
